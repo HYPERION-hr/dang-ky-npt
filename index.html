@@ -117,18 +117,13 @@ const NOI_DUNG = {
     mau1: { so: "Mẫu 1 · 41/UQ-ĐKT", ten: "Giấy ủy quyền đăng ký thuế",
             moTa: "Ủy quyền cho Công ty đăng ký NPT với cơ quan thuế thay cho nhân viên.",
             link: "https://docs.google.com/document/d/1LkNpG3yKkaVqSdWjfBmcn5M55OrGMyp1/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" },
-    mau2: { so: "Mẫu 2 · 20-ĐKT", ten: "Tờ khai đăng ký thuế",
-            moTa: "Kê khai chi tiết thông tin từng NPT. Mục 6.1: đăng ký lần đầu; mục 6.2: NPT đã có mã số thuế.",
-            link: "https://docs.google.com/document/d/10IW2wKSXm9GAORXJxAxlYJqnmREmz62z/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" },
-    mau3: { so: "Mẫu 3 · Mẫu nội bộ", ten: "Bản cam kết NPT không có thu nhập",
-            moTa: "Cam kết thu nhập bình quân của NPT không quá 3 triệu đồng/tháng. Mỗi NPT lập 1 bản.",
-            link: "https://docs.google.com/document/d/1Sl0NJa3wGTUi9NP1wEz574w8FAfFDeEu/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" },
+    mau3: { so: "Mẫu 2 · Mẫu nội bộ", ten: "Bản cam kết thông tin và thu nhập người phụ thuộc",
+            moTa: "Kê khai thông tin NPT và cam kết thu nhập bình quân không quá 3 triệu đồng/tháng. Mỗi NPT lập 1 bản.",
+            link: "https://docs.google.com/document/d/1upeOT_gVZc5vnt6KBVvNkJ6kXmP02PkT/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" },
     mau4: { so: "07/XN-NPT-TNCN", ten: "Bảng kê khai về người phải trực tiếp nuôi dưỡng",
             moTa: "Chỉ dùng khi đăng ký người thân không nơi nương tựa.",
-            link: "https://docs.google.com/document/d/1_fdmzLwKxcvdctDrF0efeCpT153cdpw0/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" }
+            link: "https://docs.google.com/document/d/1C1zFL6gu6CJeedcbPcAVU1NFaKZFP9JM/edit?usp=drive_link&ouid=100004657766115601883&rtpof=true&sd=true" }
   },
-  // Link thư mục chứa trọn bộ biểu mẫu (không bắt buộc)
-  linkTronBo: "https://drive.google.com/drive/folders/1fhZzyiZLd24Jn2tDf4N6SgzgKXE2EXZw?usp=drive_link",
 
   // ----- ĐỐI TƯỢNG NGƯỜI PHỤ THUỘC -----
   // tuoiLD: true = áp dụng điều kiện "trong/ngoài độ tuổi lao động"
@@ -139,41 +134,41 @@ const NOI_DUNG = {
       hoSo:["Giấy khai sinh của con","Thẻ Căn cước của con (nếu đã có)",
             "Con nuôi: thêm quyết định công nhận / giấy chứng nhận nuôi con nuôi",
             "Con riêng của vợ/chồng: thêm giấy chứng nhận kết hôn của nhân viên"],
-      mau:["mau1","mau2"] },
+      mau:["mau1"] },
     { ico:"🎓", ten:"Con từ 18 tuổi đang đi học",
       moTa:"Đang học đại học, cao đẳng, trung cấp, học nghề hoặc phổ thông (kể cả tháng 6–9 chờ kết quả sau lớp 12)",
       dieuKien:["Từ đủ 18 tuổi","Đang theo học"], thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:false,
       hoSo:["Giấy khai sinh của con","Thẻ Căn cước của con","Thẻ sinh viên hoặc giấy xác nhận đang học của nhà trường",
             "Con nuôi / con riêng: kèm giấy tờ chứng minh quan hệ như mục Con dưới 18 tuổi"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"♿", ten:"Con từ 18 tuổi khuyết tật",
       moTa:"Con khuyết tật, mất năng lực hành vi dân sự hoặc không có khả năng lao động",
       dieuKien:["Từ đủ 18 tuổi","Thuộc một trong các tình trạng nêu trên"], thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:false,
       hoSo:["Giấy khai sinh của con","Thẻ Căn cước của con",
             "Giấy xác nhận khuyết tật, giấy xác nhận mất năng lực hành vi dân sự hoặc giấy tờ chứng minh suy giảm khả năng lao động từ 81% trở lên"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"💍", ten:"Vợ hoặc chồng",
       moTa:"Vợ/chồng hợp pháp của nhân viên",
       thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:true,
       hoSo:["Thẻ Căn cước của vợ/chồng","Giấy chứng nhận kết hôn"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"👨‍👩‍👦", ten:"Cha mẹ đẻ",
       moTa:"Cha đẻ, mẹ đẻ của nhân viên",
       thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:true,
       hoSo:["Thẻ Căn cước của cha/mẹ","Giấy khai sinh của nhân viên"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"🏠", ten:"Cha mẹ vợ / cha mẹ chồng",
       moTa:"Cha mẹ đẻ của vợ hoặc của chồng",
       thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:true,
       hoSo:["Thẻ Căn cước của cha/mẹ","Giấy khai sinh của vợ/chồng","Giấy chứng nhận kết hôn của nhân viên"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"🧓", ten:"Cha dượng, mẹ kế, cha mẹ nuôi",
       moTa:"Cha dượng, mẹ kế; cha mẹ nuôi hợp pháp",
       thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:true,
       hoSo:["Thẻ Căn cước",
             "Cha dượng, mẹ kế: giấy khai sinh của nhân viên + giấy chứng nhận kết hôn giữa cha dượng – mẹ đẻ (hoặc mẹ kế – cha đẻ)",
             "Cha mẹ nuôi: quyết định công nhận việc nuôi con nuôi"],
-      mau:["mau1","mau2","mau3"] },
+      mau:["mau1","mau3"] },
     { ico:"🤝", ten:"Các cá nhân khác không nơi nương tựa mà người nộp thuế đang phải trực tiếp nuôi dưỡng",
       moTa:"Bao gồm các đối tượng sau (đang sống cùng và do nhân viên trực tiếp nuôi dưỡng):",
       danhSach:["Anh ruột, chị ruột, em ruột.",
@@ -182,7 +177,7 @@ const NOI_DUNG = {
                 "Người phải trực tiếp nuôi dưỡng khác theo quy định của pháp luật."],
       thuNhap:"Bình quân không quá 3 triệu đồng/tháng", tuoiLD:true,
       hoSo:["Thẻ Căn cước của người phụ thuộc","Giấy tờ chứng minh quan hệ (giấy khai sinh…)","Giấy tờ chứng minh nghĩa vụ nuôi dưỡng (nếu có)"],
-      mau:["mau1","mau2","mau3","mau4"] }
+      mau:["mau1","mau3","mau4"] }
   ],
 
   // Hướng dẫn điền biểu mẫu
@@ -192,16 +187,13 @@ const NOI_DUNG = {
       "Bảng thông tin NPT: họ tên, ngày sinh, số định danh cá nhân, quan hệ với nhân viên của từng NPT.",
       "Thời điểm bắt đầu tính giảm trừ: tháng phát sinh nghĩa vụ nuôi dưỡng (ví dụ con sinh 06/2026 thì ghi 06/2026). Thời điểm kết thúc: để trống nếu chưa xác định.",
       "Hồ sơ, tài liệu đính kèm: liệt kê các giấy tờ chứng minh nộp kèm."]},
-    { ten:"Mẫu 2 · 20-ĐKT – Tờ khai đăng ký thuế", y:[
-      "Mục 1–3: họ tên, mã số thuế của nhân viên và địa chỉ nhận thông báo. Mục 4–5 (thông tin Công ty) đã điền sẵn.",
-      "Mục 6.1: dùng khi NPT đăng ký lần đầu, chưa có mã số thuế.",
-      "Mục 6.2: dùng khi NPT đã có mã số thuế (từng đăng ký ở công ty cũ) hoặc thay đổi thông tin; chỉ khai cột có thay đổi.",
-      "NPT quốc tịch Việt Nam: chỉ cần khai số định danh cá nhân, không cần khai hộ chiếu và địa chỉ.",
-      "Cột mất năng lực hành vi, khuyết tật, tỷ lệ suy giảm, thu nhập bình quân: con dưới 18 tuổi để trống; các NPT khác bắt buộc khai nếu thuộc diện.",
-      "Cột thời điểm bắt đầu tính giảm trừ: bắt buộc điền cho tất cả NPT."]},
-    { ten:"Mẫu 3 – Bản cam kết NPT không có thu nhập", y:[
-      "Điền thông tin của nhân viên và của NPT, tháng bắt đầu đăng ký giảm trừ.",
-      "Mỗi NPT lập một bản cam kết. Ký, ghi rõ họ tên."]}
+    { ten:"Mẫu 2 – Bản cam kết thông tin và thu nhập người phụ thuộc", y:[
+      "Mỗi NPT lập một bản. Không cần lập cho con dưới 18 tuổi.",
+      "Phần I: thông tin của nhân viên (họ tên, mã nhân viên, ngày sinh, MST hoặc số định danh, địa chỉ thường trú).",
+      "Phần II: tháng bắt đầu đăng ký giảm trừ, thông tin của NPT. Mục 6 (địa chỉ thường trú của NPT) chỉ điền nếu NPT là người nước ngoài hoặc chưa có số định danh cá nhân.",
+      "Mục 7: đánh dấu đúng nhóm NPT. Mục 8–10: khai tình trạng mất năng lực hành vi, khuyết tật, tỷ lệ suy giảm khả năng lao động (nếu có).",
+      "Mục 11: ghi thu nhập bình quân tháng của NPT; ghi 0 nếu không có thu nhập.",
+      "Ký, ghi rõ họ tên ở cuối bản cam kết."]}
   ],
 
   cachNop: [
@@ -268,25 +260,6 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAABsCAIAAABy52Bp
     </button>`).join("");
 
   const nam0 = new Date().getFullYear();
-  const bangTuoi = [2026,2027,2028].map(y=>{
-    const r = gt => {
-      const a = tuoiNghiHuu(gt,y);
-      // khoảng ngày sinh đủ tuổi trong năm y
-      let first=null,last=null;
-      for (let by=1950; by<1980; by++) for (let bm=1; bm<=12; bm++){
-        const t = thangDuTuoi(gt,by,bm);
-        if (Math.floor(t/12)===y){ if(!first) first=[by,bm]; last=[by,bm]; }
-      }
-      const f = p => String(p[1]).padStart(2,"0")+"/"+p[0];
-      return `<td>Đủ ${fmtTuoi(a)}</td><td>Sinh trước ${f(first)}: cả năm<br>Sinh ${f(first)} – ${f(last)}: từ tháng đủ tuổi</td>`;
-    };
-    return `<tr><td>${y}</td>${r("nam")}${r("nu")}</tr>`;
-  }).join("");
-
-  const allForms = Object.keys(d.bieuMau).map(formHtml).join("");
-  const tronBo = d.linkTronBo && d.linkTronBo.trim()
-    ? `<p style="margin:12px 0 0"><a class="btn" href="${esc(d.linkTronBo)}" target="_blank" rel="noopener">Mở thư mục trọn bộ biểu mẫu</a></p>` : "";
-
   const yearOpts = Array.from({length:91},(_,k)=>nam0-k).map(y=>`<option ${y===1965?"selected":""}>${y}</option>`).join("");
   const monthOpts = Array.from({length:12},(_,k)=>`<option value="${k+1}">${k+1}</option>`).join("");
 
@@ -301,7 +274,7 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAABsCAIAAABy52Bp
       </div>
     </header>
     <nav>
-      <a href="#doi-tuong">Đối tượng</a><a href="#do-tuoi">Kiểm tra độ tuổi</a><a href="#bieu-mau">Biểu mẫu</a>
+      <a href="#doi-tuong">Đối tượng</a><a href="#do-tuoi">Kiểm tra độ tuổi</a>
       <a href="#cach-dien">Cách điền</a><a href="#cach-nop">Cách nộp</a><a href="#lien-he">Liên hệ</a>
     </nav>
 
@@ -320,22 +293,14 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAABsCAIAAABy52Bp
         <div><label>Xét tại tháng</label><input id="xet" type="month"></div>
       </div>
       <div class="result" id="kq"></div>
-      <div class="label" style="margin-top:18px">Bảng tuổi nghỉ hưu 2026 – 2028</div>
-      <div class="tablewrap"><table>
-        <thead><tr><th>Năm</th><th>Tuổi nghỉ hưu – Nam</th><th>Nam ngoài độ tuổi lao động</th><th>Tuổi nghỉ hưu – Nữ</th><th>Nữ ngoài độ tuổi lao động</th></tr></thead>
-        <tbody>${bangTuoi}</tbody>
-      </table></div>
       <div class="note info">Không có khả năng lao động = suy giảm khả năng lao động từ 81% trở lên, chứng minh bằng biên bản/giấy chứng nhận giám định y khoa có ghi tỷ lệ %. Giấy ra viện, bệnh án không thay thế được.</div>
     </div>
 
-    <h2 id="bieu-mau">3. Trọn bộ biểu mẫu</h2>
-    <p class="hint">Thông tin Công ty (tên, mã số thuế) đã được điền sẵn trong biểu mẫu.</p>
-    <div class="forms">${allForms}</div>${tronBo}
-
-    <h2 id="cach-dien">4. Hướng dẫn điền biểu mẫu</h2>
+    <h2 id="cach-dien">3. Hướng dẫn điền biểu mẫu</h2>
+    <p class="hint">Thông tin Công ty (tên, mã số thuế) đã được điền sẵn trong biểu mẫu. Nút tải từng mẫu nằm trong phần chi tiết của mỗi đối tượng ở mục 1.</p>
     ${d.huongDanDien.map((g,i)=>`<details ${i===0?"open":""}><summary>${esc(g.ten)}</summary><ul>${g.y.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></details>`).join("")}
 
-    <h2 id="cach-nop">5. Cách nộp và thời hạn</h2>
+    <h2 id="cach-nop">4. Cách nộp và thời hạn</h2>
     <div class="box"><ol class="steps">${d.cachNop.map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>
     <div class="tablewrap" style="margin-top:12px"><table>
       <thead><tr><th style="width:32%">Mốc thời gian</th><th>Nội dung</th></tr></thead>
@@ -343,7 +308,7 @@ const LOGO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANUAAABsCAIAAABy52Bp
     </table></div>
     <div class="note"><ul style="margin:0;padding-left:18px">${d.luuY.map(s=>`<li>${esc(s)}</li>`).join("")}</ul></div>
 
-    <h2 id="lien-he">6. Liên hệ hỗ trợ</h2>
+    <h2 id="lien-he">5. Liên hệ hỗ trợ</h2>
     <div class="box contact">
       <span><b>${esc(d.lienHe.ten)}</b></span>
       <a href="tel:${esc(d.lienHe.dienThoai)}">📞 ${esc(d.lienHe.dienThoai)}</a>
